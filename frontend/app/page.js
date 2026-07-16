@@ -167,7 +167,7 @@ export default function NancyDashboard() {
                 className="relative overflow-hidden bg-red-950/40 text-red-100 border border-red-800 py-3 rounded-lg hover:bg-red-800 hover:text-white transition-all font-bold tracking-wider disabled:opacity-50 disabled:cursor-not-allowed group"
               >
                 <span className="relative z-10">
-                  {botState === 'thinking' ? "EXTRACTING DATA..." : botState === 'answering' ? "RECEIVING..." : "INITIATE PROTOCOL"}
+                  {botState === 'thinking' ? "EXTRACTING DATA..." : botState === 'answering' ? "RECEIVING..." : "Answer Me"}
                 </span>
                 {/* Hover Glow Effect */}
                 <div className="absolute inset-0 h-full w-0 bg-red-600 transition-all duration-300 ease-out group-hover:w-full opacity-20"></div>
