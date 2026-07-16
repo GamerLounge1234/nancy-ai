@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --entity-black: #0a0a0a;
+  --blood-red: #dc2626;
+  --auric-gold: #fbbf24;
+}
+
+body {
+  background-color: var(--entity-black);
+  color: #e5e5e5;
+  /* Subtle radial gradient mimicking the fog/entity void */
+  background-image: radial-gradient(circle at 50% 0%, #1a0b0b 0%, #000000 70%);
+  background-attachment: fixed;
+}
+
+/* Premium DBD Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+  border-left: 1px solid #333;
+}
+::-webkit-scrollbar-thumb {
+  background: #5f1515; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626; 
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-blood {
+  0% { box-shadow: 0 0 10px rgba(220, 38, 38, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(220, 38, 38, 0.6); }
+  100% { box-shadow: 0 0 10px rgba(220, 38, 38, 0.2); }
+}
+.shadow-blood {
+  animation: pulse-blood 3s infinite;
+}

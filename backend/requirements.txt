@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+langchain
+langchain-community
+sentence-transformers
+pinecone-client
+python-dotenv
